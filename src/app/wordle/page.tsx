@@ -1,5 +1,7 @@
 "use client"
 
+import '/Users/princemaphupha/Desktop/Games/wordgames/wordosity/src/app/styles/app.css'
+
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import WordleGrid from '../components/WordleGrid';
@@ -22,9 +24,9 @@ function Wordle () {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-between">
+    <div className="min-h-screen bg-backblue flex flex-col items-center justify-between">
       <Navbar />
-      <h1 className="text-4xl font-bold mb-8 text-blue-500">Wordle</h1>
+      <h1 className="text-4xl font-sans mb-8 text-babyblue">Wordle</h1>
       <WordleGrid word={word} guesses={guesses} />
       <WordleKeyboard onKeyPress={handleKeyPress} />
     </div>

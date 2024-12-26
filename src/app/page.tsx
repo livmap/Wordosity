@@ -26,10 +26,10 @@ const Home = () => {
   ];
 
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className="bg-backblue min-h-screen">
       <Navbar />
       <main className="container mx-auto p-4">
-        <h1 className="text-3xl font-bold text-gray-800 text-center my-8">
+        <h1 className="text-3xl font-bold text-white text-center my-8">
           Lets get ready to word it up...
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
