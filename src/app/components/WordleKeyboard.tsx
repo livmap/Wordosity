@@ -12,7 +12,7 @@ const keys = [
 
 function WordleKeyboard ({ onKeyPress } : WordleKeyboardProps) {
   return (
-    <div className="mt-8">
+    <div className="mt-8 mb-6">
       {keys.map((row, rowIndex) => (
         <div key={rowIndex} className="flex justify-center space-x-1 mb-2">
           {row.split('').map((key) => (

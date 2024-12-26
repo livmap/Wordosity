@@ -9,16 +9,19 @@ const Home = () => {
       title: 'Wordle',
       description: 'Guess the word in six tries or less.',
       imageUrl: '/images/wordle.webp', // Add this image to your public/images folder
+      url: 'wordle'
     },
     {
       title: 'Crossword',
       description: 'Fill the grid with the correct words.',
       imageUrl: '/images/crossword.jpg',
+      url: 'crossword'
     },
     {
       title: 'Spelling Bee',
       description: 'Form words using the given letters.',
       imageUrl: '/images/spelling_bee.png',
+      url: 'spellingbee'
     },
   ];
 
@@ -36,6 +39,7 @@ const Home = () => {
               title={game.title}
               description={game.description}
               imageUrl={game.imageUrl}
+              url={game.url}
             />
           ))}
         </div>

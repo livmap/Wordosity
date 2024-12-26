@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState } from 'react';
+import Navbar from '../components/Navbar';
 import WordleGrid from '../components/WordleGrid';
 import WordleKeyboard from '../components/WordleKeyboard';
 
@@ -21,8 +22,9 @@ function Wordle () {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
-      <h1 className="text-4xl font-bold mb-8">Wordle</h1>
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-between">
+      <Navbar />
+      <h1 className="text-4xl font-bold mb-8 text-blue-500">Wordle</h1>
       <WordleGrid word={word} guesses={guesses} />
       <WordleKeyboard onKeyPress={handleKeyPress} />
     </div>
