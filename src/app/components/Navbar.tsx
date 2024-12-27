@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="p-4 shadow-md w-screen">
+    <nav className="p-4 w-screen">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/">
         <img src={'/images/logo.png'} alt={"Logo"} className="h-10 object-cover" />
