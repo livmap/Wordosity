@@ -6,11 +6,12 @@ import React, { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import WordleGrid from '../components/WordleGrid';
 import WordleKeyboard from '../components/WordleKeyboard';
+import GemAmount from '../components/GemAmount';
 
 type LetterState = 'green' | 'yellow' | 'gray';
 
 function Wordle() {
-  const [word] = useState('REACT'); // The word to guess
+  const [word] = useState('CROSS'); // The word to guess
   const [guesses, setGuesses] = useState<string[]>([]); // User guesses
   const [currentGuess, setCurrentGuess] = useState(''); // Active input
   const [finalizedRows, setFinalizedRows] = useState(0); // Track finalized rows
@@ -82,7 +83,7 @@ function Wordle() {
   return (
     <div className="min-h-screen bg-backblue flex flex-col items-center justify-between">
       <Navbar />
-      
+      <GemAmount />
       <WordleGrid word={word} guesses={rows} finalizedRows={finalizedRows} />
       <WordleKeyboard onKeyPress={handleKeyPress} letterStates={letterStates} />
     </div>
